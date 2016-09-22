@@ -11,8 +11,6 @@ var quotes = [
     {quote: "Creativity is intelligence having fun", source: "Albert Einstein"}
 ];
 
-// var numShown = 0;
-
 // Returns a random quote from the quotes array
 function getRandomQuote () {
     return quotes[Math.floor(Math.random()*quotes.length)];
@@ -40,13 +38,3 @@ function printQuote () {
     // Target the 'quote-box' div in the index.html file and replace the child content with our new string
     document.getElementById('quote-box').innerHTML = message;
 }
-
-
-
-// if (numShown === quotes.length) {
-//   for (var i = 0; i < quotes.length; i += 1) {
-//     quotes[i].shown = false;
-//     console.log(quotes[i].shown);
-//   }
-//   numShown = 0;
-// }
